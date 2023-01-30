@@ -1,8 +1,8 @@
 const express = require("express");
-const { connection } = require("./configs/db");
-const {userRouter} = require("./routes/user.routes");
-const {postRouter} = require("./routes/post.routes");
-const {authanticate} = require('./middleware/authenticate.middleware')
+const { connection } = require("./configs/database");
+const {userRouter} = require("./routes/userroutes");
+const {postRouter} = require("./routes/postroutes");
+const {authanticate} = require('./middlewares/auth')
 const cors = require('cors')
 
 
